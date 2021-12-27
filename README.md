@@ -25,3 +25,6 @@ https://streamable.com/jdwcle
 
 qb-Target
 qb-menu
+  
+  
+  Hey Guys if you are watching this i dont if this is working or not so don't download it until i announce if you want for old qb-core i can send  the link 🙂
