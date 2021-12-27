@@ -21,9 +21,6 @@ Add this to qb-target
 Preview:
 https://streamable.com/jdwcle
 
-Discord:
-https://discord.gg/wQBuB3U5Ym
-
 **Requirements**
 
 qb-Target
