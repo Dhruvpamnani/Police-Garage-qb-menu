@@ -1,10 +1,5 @@
--- Dox Shop https://discord.gg/wQBuB3U5Ym
--- Dox Shop https://discord.gg/wQBuB3U5Ym
--- Dox Shop https://discord.gg/wQBuB3U5Ym
--- Dox Shop https://discord.gg/wQBuB3U5Ym
-
-
-QBCore = nil
+                              
+local QBCore = exports['qb-core']:GetCoreObject()
 local PlayerData = {}
 local pedspawned = false
 
@@ -73,8 +68,8 @@ function loadAnimDict( dict )
     end
 end
 
-RegisterNetEvent('dox:garage')
-AddEventHandler('dox:garage', function(pd)
+RegisterNetEvent('me:garage')
+AddEventHandler('me:garage', function(pd)
     local vehicle = pd.vehicle
     local coords = { ['x'] = 458.95, ['y'] = -993.23, ['z'] = 25.377454, ['h'] = 0 }
     QBCore.Functions.SpawnVehicle(vehicle, function(veh)
@@ -82,13 +77,13 @@ AddEventHandler('dox:garage', function(pd)
         exports['LegacyFuel']:SetFuel(veh, 100.0)
         SetEntityHeading(veh, coords.h)
         TaskWarpPedIntoVehicle(GetPlayerPed(-1), veh, -1)
-        TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(veh))
+        TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
         SetVehicleEngineOn(veh, true, true)
     end, coords, true)     
 end)
 
-RegisterNetEvent('dox:storecar')
-AddEventHandler('dox:storecar', function()
+RegisterNetEvent('me:storecar')
+AddEventHandler('me:storecar', function()
 
     QBCore.Functions.Notify('Vehicle Stored!')
     local car = GetVehiclePedIsIn(PlayerPedId(),true)
@@ -100,7 +95,7 @@ end)
 
 
 RegisterNetEvent('garage:menu', function()
-    TriggerEvent('nh-context:sendMenu', {
+    exports['qb-menu']:openMenu({
         {
             id = 1,
             header = "Police Garage",
