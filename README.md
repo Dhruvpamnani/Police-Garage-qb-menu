@@ -1,6 +1,10 @@
 # Police Garage with target
 
-Add this to qb-target config.lua
+Add this to qb-target config.lua.  
+
+
+
+
 
 ["policegarage"] = {
 
