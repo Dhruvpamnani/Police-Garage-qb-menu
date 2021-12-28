@@ -68,8 +68,8 @@ function loadAnimDict( dict )
     end
 end
 
-RegisterNetEvent('me:garage')
-AddEventHandler('me:garage', function(pd)
+RegisterNetEvent('dox:garage')
+AddEventHandler('dox:garage', function(pd)
     local vehicle = pd.vehicle
     local coords = { ['x'] = 458.95, ['y'] = -993.23, ['z'] = 25.377454, ['h'] = 0 }
     QBCore.Functions.SpawnVehicle(vehicle, function(veh)
@@ -82,8 +82,8 @@ AddEventHandler('me:garage', function(pd)
     end, coords, true)     
 end)
 
-RegisterNetEvent('me:storecar')
-AddEventHandler('me:storecar', function()
+RegisterNetEvent('dox:storecar')
+AddEventHandler('dox:storecar', function()
 
     QBCore.Functions.Notify('Vehicle Stored!')
     local car = GetVehiclePedIsIn(PlayerPedId(),true)
