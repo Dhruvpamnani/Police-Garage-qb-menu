@@ -1,20 +1,48 @@
 # Police Garage with target
 
-Add this to qb-target
+Add this to qb-target config.lua
 
-    local peds = {
-        `ig_trafficwarden`,
-    }
-    AddTargetModel(peds, {
-        options = {
-            {
-                event = "garage:menu",
-                icon = "fas fa-car",
-                label = "Police Garage",
-            },
+["policegarage"] = {
+
+        models = {
+
+            'ig_trafficwarden',
+
         },
-        distance = 2.5
-    })
+
+        options = {
+
+            {
+
+                type = "client",
+
+                event = "garage:menu",
+
+                icon = "fas fa-car",
+
+                label = "Police Garage",
+
+                job = "police",
+
+            },
+
+        },
+
+        distance = 3.5,
+
+    },
+    
+
+
+
+
+
+
+
+            
+
+
+
 
 
 
