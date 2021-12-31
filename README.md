@@ -33,7 +33,7 @@ add this under Config.BoxZones = {
 
         distance = 3.5,
 
-    },,
+    },
     
 
 
