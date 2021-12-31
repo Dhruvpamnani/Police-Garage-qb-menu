@@ -1,7 +1,7 @@
 # Police Garage with target
 
 Add this to qb-target config.lua.  
-
+add this under Config.BoxZones = {
 
 
 
