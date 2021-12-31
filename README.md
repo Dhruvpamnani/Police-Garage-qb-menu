@@ -1,52 +1,22 @@
 # Police Garage with target
-
-Add this to qb-target config.lua.  
-add this under Config.BoxZones = {
+add to qb-target TargetBones
 
 
-
-
-["policegarage"] = {
+    ["policegarage"] = {
         models = {
-
             'ig_trafficwarden',
-
         },
-
         options = {
-
             {
-
                 type = "client",
-
                 event = "garage:menu",
-
                 icon = "fas fa-car",
-
                 label = "Police Garage",
-
                 job = "police",
-
             },
-
         },
-
-        distance = 3.5,
-
+    distance = 3.5,
     },
-    
-
-
-
-
-
-
-
-            
-
-
-
-
 
 
 Preview:
@@ -56,6 +26,3 @@ https://streamable.com/jdwcle
 
 qb-Target
 qb-menu
-  
-  
-
