@@ -1,6 +1,4 @@
-# Police Garage with target
-add to qb-target TargetBones
-
+# Police Garage with qb-target and qb-menu (Fork Dox-Garage) 
 
     ["policegarage"] = {
         models = {
